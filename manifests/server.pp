@@ -32,6 +32,7 @@ class ossec::server (
   $syslog_output                       = false,
   $syslog_output_server                = undef,
   $syslog_output_format                = undef,
+  $json_output                         = true,
 ) inherits ossec::params {
   validate_bool(
     $ossec_active_response, $ossec_rootcheck,
