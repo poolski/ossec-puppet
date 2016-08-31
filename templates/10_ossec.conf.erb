@@ -8,7 +8,7 @@
     <email_from><%= @ossec_emailfrom %></email_from>
     <email_maxperhour><%= @ossec_email_maxperhour %></email_maxperhour>
     <% if @json_output == true then -%>
-    <jsonout_output><% @json_output %></jsonout_output>
+    <jsonout_output>yes</jsonout_output>
     <% end -%>
     <% unless @ossec_email_idsname.nil? -%>
 <email_idsname><%= @ossec_email_idsname %></email_idsname>
